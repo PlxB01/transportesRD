@@ -153,6 +153,22 @@ header {
     z-index: 2; /* Envía textos y CTAs por delante de las capas oscuras */
 }
 
+/* NUEVO: Estilo para la insignia superior adaptada al enfoque institucional corporativo */
+.hero-content .badge-empresa {
+    display: inline-block;
+    background-color: rgba(255, 82, 26, 0.12);
+    color: var(--accent-orange);
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(255, 82, 26, 0.35);
+    box-shadow: 0 0 15px rgba(255, 82, 26, 0.1);
+}
+
 .hero h1 {
     font-size: 3.2rem;
     font-weight: 800;
@@ -267,6 +283,7 @@ header {
     font-size: 0.95rem;
     margin-bottom: 1.5rem;
     flex-grow: 1;
+    line-height: 1.6;
 }
 
 .service-objective {
@@ -274,6 +291,7 @@ header {
     padding: 1rem;
     border-left: 3px solid var(--accent-orange);
     font-size: 0.9rem;
+    margin-top: auto; /* Empuja el objetivo al fondo para nivelar alturas de tarjeta */
 }
 
 /* --- SECCIÓN NOSOTROS --- */
@@ -291,6 +309,20 @@ header {
 }
 
 .about-text { flex: 1; }
+
+.about-text .badge-empresa {
+    display: inline-block;
+    background-color: rgba(255, 82, 26, 0.1);
+    color: var(--accent-orange);
+    padding: 0.3rem 0.9rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(255, 82, 26, 0.2);
+}
+
 .about-text h2 { font-size: 2.4rem; margin: 1rem 0; }
 .about-text p { color: var(--text-muted); margin-bottom: 2rem; }
 
@@ -406,7 +438,7 @@ header {
 }
 .header-socials a {
     color: var(--text-muted);
-    font-size: 1.1rem;
+    font-size: 1.1Gram;
     transition: color 0.3s;
 }
 .header-socials a:hover {
@@ -610,4 +642,11 @@ footer {
         margin-top: -1.5rem;
     }
     .hero h1 { font-size: 2.2rem; }
+    
+    /* Adaptación móvil del distintivo institucional */
+    .hero-content .badge-empresa {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.9rem;
+        margin-bottom: 1.5rem;
+    }
 }
